@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Masterclass | TechSkillForge</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* Reusing CSS from main page for consistency */
+    :root { --primary: #6366f1; --bg-light: #ffffff; --text-light: #1f2937; --card-bg: #f9fafb; --header-bg: #ffffff; }
+    body.dark-mode { --bg-light: #0f172a; --text-light: #f1f5f9; --card-bg: #1e293b; --header-bg: #1e293b; }
+    body { background-color: var(--bg-light); color: var(--text-light); font-family: sans-serif; transition: 0.3s; margin: 0; }
+    
+    .header { background: var(--header-bg); display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .nav a { margin: 0 15px; text-decoration: none; color: inherit; }
+
+    .content-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    
+    /* Video Section */
+    .video-box { 
+      position: relative; 
+      padding-bottom: 56.25%; 
+      height: 0; 
+      overflow: hidden; 
+      border-radius: 15px; 
+      background: #000;
+      margin: 20px 0;
+    }
+    .video-box iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
+
+    /* Resource List */
+    .resource-card {
+      background: var(--card-bg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .btn-download {
+      background: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #themeToggle { background: none; border: none; cursor: pointer; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="tutorials.html">← Back to Tutorials</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+<!-- Main Video Content -->
+  <div class="content-container">
+    <h1>🐍 Python Masterclass</h1>
+    <p>Watch the video below and download the handwritten notes to follow along.</p>
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" allowfullscreen></iframe>
+    </div>
+<!-- Resources Section -->
+    <h2 style="margin-top:40px;">📂 Download Resources</h2>
+    
+    <div class="resource-card">
+      <div>
+        <strong>1. Python Basics PDF</strong>
+        <p style="margin:5px 0 0; font-size:0.8rem; opacity:0.7;">Detailed notes on variables, loops, and logic.</p>
+      </div>
+      <a href="../assets/pdf/python-basics.pdf" download class="btn-download">Download</a>
+    </div>
+
+    <div class="resource-card">
+      <div>
+        <strong>2. Project Source Code</strong>
+        <p style="margin:5px 0 0; font-size:0.8rem; opacity:0.7;">Complete .zip file of today's coding exercise.</p>
+      </div>
+      <a href="../assets/source/project.zip" download class="btn-download">Download</a>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      btn.innerText = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
