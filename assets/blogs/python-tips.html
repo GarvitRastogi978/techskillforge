@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Python Tips Every Developer Should Know</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        .read-time {
+            text-align: center;
+            margin-top: 40px;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>10 Python Tips Every Developer Should Know</h1>
+
+    <p>Python is renowned for its simplicity and readability, but even seasoned developers can benefit from learning new tricks and best practices. Whether you're a beginner or an experienced programmer, these 10 tips will help you write cleaner, more efficient, and more Pythonic code.</p>
+
+    <h2>1. Use List Comprehensions</h2>
+    <p>List comprehensions provide a concise way to create lists. They’re often faster and more readable than traditional loops.</p>
+    <pre><code># Traditional loop
+squares = []
+for x in range(10):
+    squares.append(x**2)
+
+# List comprehension
+squares = [x**2 for x in range(10)]</code></pre>
+
+    <h2>2. Leverage f-Strings for Formatting</h2>
+    <p>Introduced in Python 3.6, f-strings are the most efficient and readable way to format strings.</p>
+    <pre><code>name = "Alice"
+age = 30
+message = f"Hello, my name is {name} and I'm {age} years old."</code></pre>
+
+    <h2>3. Use enumerate() to Get Index and Value</h2>
+    <p>When you need both the index and the value from a list, <code>enumerate()</code> is your friend.</p>
+    <pre><code>fruits = ['apple', 'banana', 'cherry']
+for index, fruit in enumerate(fruits):
+    print(f"{index}: {fruit}")</code></pre>
+
+    <h2>4. Take Advantage of the Walrus Operator (:=)</h2>
+    <p>Available from Python 3.8+, the walrus operator lets you assign and return a value in the same expression.</p>
+    <pre><code># Without walrus
+n = len(data)
+if n > 10:
+    print(f"List is too long ({n} elements)")
+
+# With walrus
+if (n := len(data)) > 10:
+    print(f"List is too long ({n} elements)")</code></pre>
+
+    <h2>5. Use Context Managers for Resource Handling</h2>
+    <p>Always use context managers (the <code>with</code> statement) when working with files or other resources to ensure they’re properly closed.</p>
+    <pre><code># Good
+with open('file.txt', 'r') as f:
+    content = f.read()
+
+# Avoid
+f = open('file.txt', 'r')
+content = f.read()
+f.close()</code></pre>
+
+    <h2>6. Unpack with *</h2>
+    <p>Use the unpacking operator <code>*</code> to simplify assignments and function calls.</p>
+    <pre><code># Unpacking a list
+first, *middle, last = [1, 2, 3, 4, 5]
+print(first, middle, last)  # 1 [2, 3, 4] 5
+
+# Passing arguments
+def add(a, b, c):
+    return a + b + c
+
+nums = [1, 2, 3]
+result = add(*nums)</code></pre>
+
+    <h2>7. Use collections.defaultdict for Missing Keys</h2>
+    <p>Avoid KeyError exceptions and boilerplate code with <code>defaultdict</code>.</p>
+    <pre><code>from collections import defaultdict
+
+# Regular dict
+counts = {}
+for word in words:
+    if word not in counts:
+        counts[word] = 0
+    counts[word] += 1
+
+# With defaultdict
+counts = defaultdict(int)
+for word in words:
+    counts[word] += 1</code></pre>
+
+    <h2>8. Sort with Custom Keys</h2>
+    <p>Use the <code>key</code> parameter in <code>sorted()</code> or <code>list.sort()</code> to define custom sorting logic.</p>
+    <pre><code>students = [('Alice', 85), ('Bob', 75), ('Charlie', 90)]
+# Sort by score (second element)
+sorted_students = sorted(students, key=lambda x: x[1])</code></pre>
+
+    <h2>9. Profile Your Code with timeit</h2>
+    <p>Use the <code>timeit</code> module to accurately measure the execution time of small code snippets.</p>
+    <pre><code>import timeit
+
+time = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
+print(time)</code></pre>
+
+    <h2>10. Write Docstrings and Use Type Hints</h2>
+    <p>Improve code maintainability by documenting functions with docstrings and using type hints (introduced in Python 3.5+).</p>
+    <pre><code>def greet(name: str) -> str:
+    """Return a personalized greeting message."""
+    return f"Hello, {name}!"</code></pre>
+
+    <p>These tips may seem simple, but mastering them will significantly improve your Python code’s quality, performance, and readability. Make them part of your daily coding habits!</p>
+
+    <div class="read-time">Estimated reading time: 5 minutes</div>
+</body>
+</html>
