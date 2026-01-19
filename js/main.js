@@ -34,3 +34,22 @@ navLinks.forEach(link => {
     link.classList.add('active');
   });
 });
+
+// =============================
+// SEARCH FUNCTIONALITY FOR QUESTIONS PAGE NEW UPDATE
+// =============================
+const searchInput = document.getElementById('questionSearch');
+if (searchInput) {
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('.cards .card');
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+}

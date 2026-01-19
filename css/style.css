@@ -202,3 +202,58 @@ body {
   color: #007bff; /* Change to your brand color */
   transform: translateY(-3px);
 }
+
+/* =============================
+   SEARCH BAR STYLING
+============================= */
+/* Search Section Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: var(--bg-color, #f9f9f9); /* Uses your theme variable if available */
+}
+
+/* The Search Input Field */
+#questionSearch {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px; /* Rounded pill shape */
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+/* Hover and Focus States */
+#questionSearch:hover {
+  border-color: #007bff;
+}
+
+#questionSearch:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  width: 105%; /* Subtle expansion effect */
+}
+
+/* Placeholder Styling */
+#questionSearch::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Smooth transition for card filtering */
+.card {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #questionSearch {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
