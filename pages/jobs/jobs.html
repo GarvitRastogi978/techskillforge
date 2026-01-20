@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latest Job Openings | TechGrow</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Explore latest job openings from top companies. Daily updated fresher and experienced job opportunities." />
+  <meta name="keywords" content="Job Openings, Tech Jobs, Fresher Jobs, IT Jobs, Daily Job Updates" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* JOB PORTAL STYLES */
+    .jobs-container{
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .job-card{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      border-left: 5px solid var(--primary);
+    }
+
+    .job-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .job-header h3{
+      margin: 0;
+    }
+
+    .badge{
+      background: var(--primary);
+      color: #fff;
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .job-meta{
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .apply-btn{
+      margin-top: 0.8rem;
+      align-self: flex-start;
+      padding: 0.5rem 1.2rem;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .apply-btn:hover{
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .jobs-container {
+    margin-top: 0;
+    }
+
+    #jobSearch {
+        padding: 0.7rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        max-width: 400px; /* Adjust as needed based on your original code */
+    }
+
+    #jobFilter {
+        padding: 0.7rem 1rem;
+        border-radius: 8px;
+        max-width: 250px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechGrow</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="./jobs.html" class="active">Jobs</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>🚀 Latest Job Openings</h1>
+    <p>Daily updated job opportunities from top companies.</p>
+  </section>
+
+  <!-- Search & Filter -->
+<section class="jobs-container">
+    
+    <label for="jobSearch" class="visually-hidden">Search Jobs</label>
+    <input type="text" id="jobSearch" placeholder="Search by role, company, skills...">
+
+    <label for="jobFilter" class="visually-hidden">Filter by Category</label>
+    <select id="jobFilter">
+        <option value="">All Categories</option>
+        <option value="Fresher">Fresher</option>
+        <option value="Experienced">Experienced</option>
+        <option value="Internship">Internship</option>
+    </select>
+
+</section>
+
+  <!-- Jobs List -->
+  <section class="jobs-container" id="jobsContainer"></section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechGrow. Find your next opportunity.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+
+</body>
+</html>

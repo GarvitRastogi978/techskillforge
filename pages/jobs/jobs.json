@@ -1,0 +1,47 @@
+[
+  {
+    "role": "Python Developer",
+    "company": "Infosys",
+    "location": "Remote",
+    "experience": "0–1 Years",
+    "type": "Fresher",
+    "skills": ["Python", "OOPs", "SQL", "Git"],
+    "applyLink": "https://company.com/apply"
+  },
+  {
+    "role": "Data Analyst",
+    "company": "Accenture",
+    "location": "Bangalore",
+    "experience": "2–4 Years",
+    "type": "Experienced",
+    "skills": ["SQL", "Excel", "Power BI", "Python"],
+    "applyLink": "https://company.com/jobs"
+  },
+  {
+    "role": "Frontend Intern",
+    "company": "Startup",
+    "location": "Hybrid",
+    "experience": "Internship",
+    "type": "Internship",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "applyLink": "https://startup.com/apply"
+  },
+  {
+    "role": "DevOps Engineer",
+    "company": "TCS",
+    "location": "Chennai",
+    "experience": "3–5 Years",
+    "type": "Experienced",
+    "skills": ["AWS", "Docker", "Kubernetes", "CI/CD"],
+    "applyLink": "https://tcs.com/careers"
+  },
+  {
+    "role": "Marketing Intern",
+    "company": "Digital Solutions",
+    "location": "Remote",
+    "experience": "Internship",
+    "type": "Internship",
+    "skills": ["Social Media", "Content Creation", "SEO"],
+    "applyLink": "https://digitalsolutions.com/internships"
+  }
+]
