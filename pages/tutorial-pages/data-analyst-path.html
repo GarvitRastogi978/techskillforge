@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Science Resources | TechSkillForge</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    :root { --primary: #6366f1; --bg-light: #ffffff; --text-light: #1f2937; --card-bg: #f9fafb; --header-bg: #ffffff; }
+    body.dark-mode { --bg-light: #0f172a; --text-light: #f1f5f9; --card-bg: #1e293b; --header-bg: #1e293b; }
+    body { background-color: var(--bg-light); color: var(--text-light); font-family: sans-serif; transition: 0.3s; margin: 0; }
+    .header { background: var(--header-bg); display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .nav a { margin: 0 15px; text-decoration: none; color: inherit; }
+    .content-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; background: #000; margin: 20px 0; }
+    .video-box iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
+    .resource-card { background: var(--card-bg); display: flex; justify-content: space-between; align-items: center; padding: 20px; border-radius: 10px; margin-bottom: 15px; border: 1px solid rgba(0,0,0,0.05); }
+    .btn-download { background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    #themeToggle { background: none; border: none; cursor: pointer; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav"><a href="../tutorials.html">← Back to Tutorials</a></nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+<div class="content-container">
+    <h1>24-Hrs Data Analytics Full Course 2026 – From Zero to Hero</h1>
+    <hr>
+    <p>This comprehensive 24-hour Data Analytics course is designed to take you from a beginner to a proficient data analyst. 
+        Whether you're starting from scratch or looking to enhance your skills, this course covers everything you need to know about data analytics in 2026.</p>
+    <!--Horizontal Line-->
+    <hr>
+    <h3>📌 What You’ll Learn in This Course</h3>
+    <p>
+        ✔️ Excel for Data Analytics (Beginner → Advanced) <br>
+        ✔️ SQL for Data Analysis (Queries, Joins, Functions, Projects) <br>
+        ✔️ Statistics for Data Analysts (Easy & Practical) <br>
+        ✔️ Power BI / Data Visualization <br>
+        ✔️ Real-World Data Analytics Projects <br>
+        ✔️ Interview Questions & Career Guidance <br>
+        ✔️ Resume & Portfolio Tips for Data Analyst
+    </p>
+    <hr>
+    <ul>
+        <li>This course is 100% beginner-friendly, even if:</li>
+        <li>You are from non-technical background</li>
+        <li>You are a college student / fresher</li>
+        <li>You want to switch your career to Data Analyst</li>
+    </ul>
+    <hr>
+
+    <div class="video-box">
+      <!-- <iframe src="" allowfullscreen></iframe> -->
+       <iframe width="1521" height="579" src="https://www.youtube.com/embed/awDzSpOSeO0" title="Data Analytics Full Course 2026 | Data Analyst Full Course in Hindi 2026 | Data Analyst Course 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <h2>📂 FREE RESOURCES</h2>
+    <div class="resource-card">
+      <div><strong>🎁FREE DOWNLOADS & MATERIALS</strong></div>
+      <!-- <a href="https://www.datawithbaraa.com/wiki/sql#sql-welcome" download class="btn-download">Download</a> -->
+       <ul>
+        <li><a href="https://topvarsity.in/data-analytics-full-course-hindi-playlist/">All Excel Notes</a></li>
+        <li><a href="https://topvarsity.in/wp-content/uploads/2026/01/SQL-Notes.pdf">All SQL Notes</a></li>
+        <li><a href="https://topvarsity.in/notes-resources/">Notes & Resources</a></li>
+        <li><a href="https://topvarsity.in/ola-data-analyst-project/">Ola Data Analyst Project</a></li>
+        <li><a href="https://topvarsity.in/papollo-hospitals-performance-tracker/">Healthcare Project Resources</a></li>
+        <li><a href="https://topvarsity.in/">Python Project 1 Resources</a></li>
+        <li><a href="https://topvarsity.in/">Python Project 2 Resources</a></li>
+       </ul>
+      <a href="https://www.youtube.com/@TopVarSity">All Credits To:<br>Top VarSity Youtube Channel</a>
+    </div>
+</div>
+
+  <script>
+    const btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      btn.innerText = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
