@@ -94,3 +94,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchInput) searchInput.addEventListener('input', filterJobs);
     if (filterSelect) filterSelect.addEventListener('change', filterJobs);
 });
+
+// TEMP CODE
+document.getElementById('questionSearch').addEventListener('keyup', function() {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        // Get the text from the heading and paragraph
+        let text = card.innerText.toLowerCase();
+        
+        // If the text includes the search term, show the card, otherwise hide it
+        if (text.includes(filter)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});

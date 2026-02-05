@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top HR interview questions and answers for job preparation. Read common HR questions asked in interviews." />
+  <meta name="keywords" content="HR Interview Questions, Job Interview HR Questions, Behavioral Interview Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* HR QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>🛢️10 Most-Asked SQL Interview Questions</h1>
+    <p>Top SQL interview questions and answers for job preparation.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+
+    <div class="question-block">
+        <p class="question-text">1. What is the difference between Inner Join and Left Join?</p>
+        <p class="answer-text">An <strong>Inner Join</strong> returns records that have matching values in both tables. A <strong>Left Join</strong> returns all records from the left table, and the matched records from the right table; if no match exists, NULL values are returned for the right side.</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2. What is the difference between WHERE and HAVING clauses?</p>
+        <p class="answer-text"><code>WHERE</code> is used to filter records before any groupings are made. <code>HAVING</code> is used to filter values after an <code>GROUP BY</code> has been applied (usually involving aggregate functions like SUM or COUNT).</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3. What are Primary Keys and Foreign Keys?</p>
+        <p class="answer-text">A <strong>Primary Key</strong> uniquely identifies each record in a table and cannot be null. A <strong>Foreign Key</strong> is a field in one table that refers to the Primary Key in another table, establishing a link between them.</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4. Explain the difference between DELETE, TRUNCATE, and DROP.</p>
+        <p class="answer-text"><code>DELETE</code> removes specific rows (can be rolled back). <code>TRUNCATE</code> removes all rows from a table but keeps the structure (faster, cannot be rolled back easily). <code>DROP</code> removes the entire table structure and data from the database.</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5. What is a Subquery?</p>
+        <p class="answer-text">A subquery is a query nested inside another query (the outer query). It can be used in <code>SELECT</code>, <code>FROM</code>, or <code>WHERE</code> clauses to provide data for the main operation.</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6. What is a "Self Join"?</p>
+        <p class="answer-text">A self join is a regular join, but the table is joined with itself. This is useful for querying hierarchical data or comparing rows within the same table (e.g., finding employees and their managers in one staff table).</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7. What are the Aggregate functions in SQL?</p>
+        <p class="answer-text">Aggregate functions perform a calculation on a set of values and return a single value. Common ones include: <code>COUNT()</code>, <code>SUM()</code>, <code>AVG()</code>, <code>MIN()</code>, and <code>MAX()</code>.</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8. What is the purpose of the GROUP BY clause?</p>
+        <p class="answer-text">The <code>GROUP BY</code> statement groups rows that have the same values into summary rows. It is often used with aggregate functions to find things like "total sales per region."</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9. What is a Database Index and why is it used?</p>
+        <p class="answer-text">An index is a performance optimization tool that allows the database to find data faster without scanning every row in a table. However, indexes can slow down data insertion and updates.</p>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10. What is Normalization?</p>
+        <p class="answer-text">Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing large tables into smaller ones and defining relationships between them (e.g., 1NF, 2NF, 3NF).</p>
+    </div>
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

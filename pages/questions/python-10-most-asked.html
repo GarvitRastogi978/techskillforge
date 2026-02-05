@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top HR interview questions and answers for job preparation. Read common HR questions asked in interviews." />
+  <meta name="keywords" content="HR Interview Questions, Job Interview HR Questions, Behavioral Interview Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* HR QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>💻 10 Most-Asked Python Interview Questions</h1>
+    <p>Prepare effectively for your next Python interview with these commonly asked questions and model answers.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+
+    <div class="question-block">
+        <h3>1. What is the difference between a List and a Tuple?</h3>
+        <p>This tests your knowledge of <strong>mutability</strong> and performance.</p>
+        <ul>
+            <li><strong>Lists:</strong> Defined with <code>[]</code>, they are <strong>mutable</strong> (can be changed) and generally slower for iteration.</li>
+            <li><strong>Tuples:</strong> Defined with <code>()</code>, they are <strong>immutable</strong> (cannot be changed) and faster, making them ideal for fixed data.</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <h3>2. How is memory managed in Python?</h3>
+        <ul>
+            <li><strong>Private Heap:</strong> All Python objects and data structures are located in a private heap.</li>
+            <li><strong>Garbage Collection:</strong> Python uses <strong>Reference Counting</strong> and a <strong>Cyclic Garbage Collector</strong> to automatically deallocate memory.</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <h3>3. What are Decorators?</h3>
+        <p>A decorator is a design pattern that allows you to modify the behavior of a function or class without permanently modifying its source code. They are applied using the <code>@decorator_name</code> syntax.</p>
+    </div>
+
+    <div class="question-block">
+        <h3>4. Explain the difference between <code>is</code> and <code>==</code>.</h3>
+        <ul>
+            <li><strong><code>==</code> (Equality):</strong> Checks if the <strong>values</strong> of two objects are the same.</li>
+            <li><strong><code>is</code> (Identity):</strong> Checks if two variables point to the <strong>same object in memory</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <h3>5. What is the Global Interpreter Lock (GIL)?</h3>
+        <p>The GIL is a mutex that allows only one thread to execute Python bytecode at a time. While it simplifies memory management, it can be a bottleneck for CPU-bound multi-threaded programs.</p>
+    </div>
+
+    <div class="question-block">
+        <h3>6. What are <code>*args</code> and <code>**kwargs</code>?</h3>
+        <ul>
+            <li><code>*args</code>: Collects extra positional arguments as a <strong>tuple</strong>.</li>
+            <li><code>**kwargs</code>: Collects extra keyword arguments as a <strong>dictionary</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <h3>7. What is the difference between Shallow Copy and Deep Copy?</h3>
+        <ul>
+            <li><strong>Shallow Copy:</strong> Creates a new object but fills it with references to the original nested objects.</li>
+            <li><strong>Deep Copy:</strong> Creates a new object and recursively adds copies of the nested objects, making it a completely independent clone.</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <h3>8. What are Generators and how do they differ from Lists?</h3>
+        <ul>
+            <li><strong>Lists:</strong> Store the entire sequence in memory.</li>
+            <li><strong>Generators:</strong> Use the <code>yield</code> keyword to produce items on the fly (<strong>lazy evaluation</strong>), making them memory-efficient for large datasets.</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <h3>9. What is PEP 8?</h3>
+        <p><strong>PEP 8</strong> is the official style guide for Python code. It covers conventions for indentation, variable naming (snake_case), and line length to ensure high readability.</p>
+    </div>
+
+    <div class="question-block">
+        <h3>10. How does the <code>__init__</code> method work?</h3>
+        <p>Often called a "constructor," <code>__init__</code> is a reserved method in Python classes. It is automatically called when a new instance of a class is created to initialize the object's attributes.</p>
+    </div>
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
