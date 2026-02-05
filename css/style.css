@@ -257,3 +257,70 @@ body {
     padding: 12px 20px;
   }
 }
+
+/* =============================
+   UPDATE SECTION STYLING
+============================= */
+.update-section {
+  max-width:fit-content;
+  margin: 20px auto;
+  padding: 30px;
+  /* Dark Glassmorphism Effect */
+  background: linear-gradient(145deg, #1e1e26, #141419);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid #33333f;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.update-section h2 {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.update-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.update-section li {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-left: 4px solid #ffcc00; /* Accent strip */
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+}
+
+/* Hover Interactivity from Option 1 */
+.update-section li:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateX(8px);
+  border-left-color: #ffffff;
+  color: #fff;
+}
+
+/* Subtle Glow on Hover */
+.update-section li:hover {
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Custom bullet icon using the "🔥" logic */
+.update-section li::before {
+  content: "✦";
+  margin-right: 12px;
+  color: #ffcc00;
+  font-weight: bold;
+}
