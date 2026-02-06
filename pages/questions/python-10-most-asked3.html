@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top Python interview questions and answers for job preparation. Read common Python questions asked in interviews." />
+  <meta name="keywords" content="Python Interview Questions, Job Interview Python Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* Python QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>💻 10 Most-Asked Python Interview Questions (PART 3)</h1>
+    <p>Prepare effectively for your next Python interview with these commonly asked questions and model answers.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+
+    <div class="question-block"> <h3>1. What are the key features of Python?</h3> <p>Python is an <strong>interpreted</strong>, <strong>high-level</strong>, and <strong>dynamically typed</strong> language. Its key features include easy-to-read syntax (readability), a massive standard library, and support for multiple programming paradigms like Object-Oriented and Functional programming.</p> </div>
+
+    <div class="question-block"> <h3>2. What is the difference between List and Tuple?</h3> <p>The primary difference is <strong>mutability</strong>. Lists are mutable (can be changed after creation) and use square brackets <code>[]</code>. Tuples are immutable (cannot be changed) and use parentheses <code>()</code>. Tuples are generally faster and safer for data that shouldn't change.</p> </div>
+
+    <div class="question-block"> <h3>3. What is PEP 8?</h3> <p>PEP 8 stands for <strong>Python Enhancement Proposal 8</strong>. It is the official style guide for Python code, providing guidelines on how to format code (like using 4 spaces for indentation) to ensure maximum readability and consistency across the community.</p> </div>
+
+    <div class="question-block"> <h3>4. How is memory managed in Python?</h3> <p>Memory is managed automatically via the <strong>Python Memory Manager</strong>. It uses a private heap space where all objects are stored. Python also employs <strong>Garbage Collection</strong> (specifically reference counting) to clear objects that are no longer in use.</p> </div>
+
+    <div class="question-block"> <h3>5. What are Python namespaces?</h3> <p>A namespace is a naming system used to ensure that names are unique and can be used without any conflict. It’s essentially a dictionary where keys are the object names and values are the objects themselves (e.g., Local, Global, and Built-in namespaces).</p> </div>
+
+    <div class="question-block"> <h3>6. What is the difference between 'is' and '=='?</h3> <p>The <code>==</code> operator checks for <strong>equality</strong> (do these two variables have the same value?). The <code>is</code> operator checks for <strong>identity</strong> (do these two variables point to the exact same object in memory?).</p> </div>
+
+    <div class="question-block"> <h3>7. What are 'args' and 'kwargs' in Python functions?</h3> <p><code>*args</code> allows a function to accept any number of <strong>positional arguments</strong>, which are received as a tuple. <code>**kwargs</code> allows a function to accept any number of <strong>keyword arguments</strong>, which are received as a dictionary.</p> </div>
+
+    <div class="question-block"> <h3>8. What is a dictionary in Python?</h3> <p>A dictionary is an unordered collection of <strong>key-value pairs</strong>. Each key must be unique and hashable (like a string or integer). Dictionaries are optimized for retrieving data when you know the key.</p> </div>
+
+    <div class="question-block"> <h3>9. What is the purpose of 'self' in Python classes?</h3> <p>The <code>self</code> keyword represents the <strong>instance</strong> of the class. By using <code>self</code>, we can access the attributes and methods of the class in Python. It binds the arguments with the given attributes.</p> </div>
+
+    <div class="question-block"> <h3>10. What is a List Comprehension?</h3> <p>List comprehension is a concise way to create lists. It consists of brackets containing an expression followed by a <code>for</code> clause. For example: <code>[x**2 for x in range(5)]</code> creates a list of squares.</p> </div>
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

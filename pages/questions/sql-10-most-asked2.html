@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQL Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top SQL interview questions and answers for job preparation. Read common SQL questions asked in interviews." />
+  <meta name="keywords" content="SQL Interview Questions, Job Interview SQL Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* SQL QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>🛢️ 10 Most-Asked SQL Interview Questions (PART 2)</h1>
+    <p>Prepare effectively for your next SQL interview with these commonly asked questions and model answers.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+
+    <div class="question-block"> <h3>1. What is SQL and what is it used for?</h3> <p>SQL stands for <strong>Structured Query Language</strong>. It is the standard language used to communicate with, manage, and manipulate data within a Relational Database Management System (RDBMS).</p> </div>
+
+    <div class="question-block"> <h3>2. What is the difference between DBMS and RDBMS?</h3> <p>A DBMS (Database Management System) manages data stored as files. An <strong>RDBMS</strong> (Relational DBMS) is a more advanced version that stores data in a structured <strong>tabular format</strong> (rows and columns) and uses keys to connect different tables.</p> </div>
+
+    <div class="question-block"> <h3>3. What is a Primary Key?</h3> <p>A Primary Key is a unique identifier for each record in a table. It must contain <strong>unique values</strong> and cannot contain <code>NULL</code> values. Each table can have only one primary key.</p> </div>
+
+    <div class="question-block"> <h3>4. What is a Foreign Key?</h3> <p>A Foreign Key is a field in one table that refers to the <strong>Primary Key</strong> in another table. It is used to create a link or relationship between the two tables.</p> </div>
+
+    <div class="question-block"> <h3>5. What is the difference between DELETE and TRUNCATE?</h3> <p><code>DELETE</code> is a DML command used to remove specific rows using a <code>WHERE</code> clause; it can be rolled back. <code>TRUNCATE</code> is a DDL command that removes <strong>all rows</strong> from a table; it is generally faster and cannot be rolled back easily.</p> </div>
+
+    <div class="question-block"> <h3>6. What are the different types of Joins in SQL?</h3> <p>The main types are: <strong>Inner Join</strong> (matching values in both), <strong>Left Join</strong> (all from left + matches from right), <strong>Right Join</strong> (all from right + matches from left), and <strong>Full Join</strong> (all records when there is a match in either).</p> </div>
+
+    <div class="question-block"> <h3>7. What is the purpose of the GROUP BY clause?</h3> <p>The <code>GROUP BY</code> clause is used to arrange identical data into groups. It is often used with <strong>aggregate functions</strong> like <code>COUNT()</code>, <code>MAX()</code>, <code>MIN()</code>, <code>SUM()</code>, and <code>AVG()</code>.</p> </div>
+
+    <div class="question-block"> <h3>8. What is the difference between WHERE and HAVING?</h3> <p><code>WHERE</code> is used to filter records <strong>before</strong> any groupings are made. <code>HAVING</code> is used to filter records <strong>after</strong> the <code>GROUP BY</code> clause has been applied to aggregate data.</p> </div>
+
+    <div class="question-block"> <h3>9. What is a Unique Constraint?</h3> <p>A Unique Constraint ensures that all values in a column are different. Unlike a Primary Key, a column with a Unique Constraint <strong>can accept one NULL value</strong>.</p> </div>
+
+    <div class="question-block"> <h3>10. What are Aggregate Functions?</h3> <p>Aggregate functions perform a calculation on a set of values and return a <strong>single value</strong>. Common examples include <code>SUM()</code>, <code>AVG()</code>, <code>COUNT()</code>, <code>MIN()</code>, and <code>MAX()</code>.</p> </div>
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

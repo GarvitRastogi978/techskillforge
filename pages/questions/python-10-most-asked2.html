@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top Python interview questions and answers for job preparation. Read common Python questions asked in interviews." />
+  <meta name="keywords" content="Python Interview Questions, Job Interview Python Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* Python QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>💻 10 Most-Asked Python Interview Questions (PART 2)</h1>
+    <p>Prepare effectively for your next Python interview with these commonly asked questions and model answers.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+
+    <div class="question-block"> <h3>1. What is the difference between Deep Copy and Shallow Copy?</h3> <p>A <b>shallow copy</b> creates a new object but fills it with references to the original nested objects. A <b>deep copy</b> creates a new object and recursively adds copies of the nested objects, ensuring that changes to the copy don't affect the original.</p> </div>
+
+    <div class="question-block"> <h3>2. How is Memory Management handled in Python?</h3> <p>Python uses a private heap to manage memory. It employs a <b>Reference Counter</b> to track object usage and a <b>Garbage Collector</b> (using a cyclic-garbage-collection algorithm) to reclaim memory from objects that are no longer reachable.</p> </div>
+
+    <div class="question-block"> <h3>3. What are Generators and how do they differ from Lists?</h3> <p>Generators are functions that return an iterable set of items one at a time using the <code>yield</code> keyword. Unlike lists, they are <b>lazy-evaluated</b>, meaning they save memory by not storing the entire sequence in RAM.</p> </div>
+
+    <div class="question-block"> <h3>4. Explain the difference between *args and **kwargs.</h3> <p><code>*args</code> allows a function to accept any number of positional arguments, which are stored in a tuple. <code>**kwargs</code> allows for any number of keyword arguments, which are stored in a dictionary.</p> </div>
+
+    <div class="question-block"> <h3>5. What is Monkey Patching in Python?</h3> <p>Monkey patching refers to the practice of dynamic replacement of attributes, methods, or functions at <b>runtime</b>. It is often used in testing to replace complex objects with mock versions.</p> </div>
+
+    <div class="question-block"> <h3>6. How do "Global Interpreter Lock" (GIL) affect multi-threading?</h3> <p>The GIL is a mutex that allows only one thread to execute Python bytecode at a time. This prevents true parallel execution of threads on multiple CPU cores, making Python's <code>threading</code> better for I/O-bound tasks than CPU-bound ones.</p> </div>
+
+    <div class="question-block"> <h3>7. What is the use of 'self' in Python classes?</h3> <p><code>self</code> represents the <b>instance</b> of the class. It allows the code to access the attributes and methods associated with that specific object, distinguishing them from local variables within the method.</p> </div>
+
+    <div class="question-block"> <h3>8. What are List Comprehensions and why use them?</h3> <p>List comprehensions provide a concise way to create lists. They are generally <b>faster</b> and more readable than traditional <code>for</code> loops and <code>append()</code> calls for simple data transformations.</p> </div>
+
+    <div class="question-block"> <h3>9. Explain Method Resolution Order (MRO).</h3> <p>MRO is the order in which Python searches for a method in a class hierarchy, especially in <b>multiple inheritance</b> scenarios. Python uses the <b>C3 Linearization</b> algorithm to determine this order.</p> </div>
+
+    <div class="question-block"> <h3>10. What is the difference between @staticmethod and @classmethod?</h3> <p>A <code>@classmethod</code> takes <code>cls</code> as its first argument and can modify class state, while a <code>@staticmethod</code> takes no implicit first argument and behaves like a regular function belonging to the class's namespace.</p> </div>
+
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -283,6 +283,39 @@ body {
   text-transform: uppercase;
 }
 
+.update-section p {
+  color: #00c8ff;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.update-section button {
+    background-color: #6200ee; /* Deep Purple */
+    border: none;
+    border-radius: 8px;
+    padding: 0; /* Important: Remove padding so the link fills the space */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-section button a {
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.update-section button:hover {
+  background-color: #3700b3;
+}
+
 .update-section ul {
   list-style: none;
   padding: 0;
