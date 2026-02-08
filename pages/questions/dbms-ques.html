@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DBMS Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top SQL interview questions and answers for job preparation. Read common SQL questions asked in interviews." />
+  <meta name="keywords" content="SQL Interview Questions, Job Interview SQL Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* SQL QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>🛢️ 10 Most-Asked DBMS Interview Questions</h1>
+    <p>Prepare effectively for your next DBMS interview with these commonly asked questions and model answers.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+
+    <div class="question-block"> <h3>1. What is the difference between DBMS and RDBMS?</h3> <p>A <b>DBMS</b> (Database Management System) stores data as files and is generally for smaller datasets. An <b>RDBMS</b> (Relational DBMS) stores data in a tabular format (rows and columns) and enforces relationships between tables using keys, following Codd's rules.</p> </div>
+
+    <div class="question-block"> <h3>2. Explain the ACID properties in DBMS.</h3> <p>ACID ensures reliable transaction processing: <b>Atomicity</b> (all or nothing), <b>Consistency</b> (valid data states), <b>Isolation</b> (transactions don't interfere), and <b>Durability</b> (committed data is permanent).</p> </div>
+
+    <div class="question-block"> <h3>3. What is Normalization and why is it used?</h3> <p>Normalization is the process of organizing data to reduce redundancy and improve data integrity. It involves dividing large tables into smaller ones and defining relationships between them (e.g., 1NF, 2NF, 3NF, BCNF).</p> </div>
+
+    <div class="question-block"> <h3>4. What are the different types of Joins?</h3> <p>Joins combine rows from two or more tables based on a related column. Common types include: <b>Inner Join</b> (matching records), <b>Left Join</b> (all left + matching right), <b>Right Join</b> (all right + matching left), and <b>Full Join</b> (all records from both).</p> </div>
+
+    <div class="question-block"> <h3>5. Distinguish between Primary Key, Foreign Key, and Unique Key.</h3> <p>A <b>Primary Key</b> uniquely identifies a record and cannot be null. A <b>Unique Key</b> ensures uniqueness but allows one null value. A <b>Foreign Key</b> is a field in one table that links to the Primary Key of another, maintaining referential integrity.</p> </div>
+
+    <div class="question-block"> <h3>6. What is a "Deadlock" and how is it handled?</h3> <p>A deadlock occurs when two or more transactions are waiting for each other to release locks, creating a cycle. It is handled through <b>Deadlock Detection</b> (killing one process), <b>Deadlock Prevention</b>, or <b>Deadlock Avoidance</b> algorithms.</p> </div>
+
+    <div class="question-block"> <h3>7. What is the difference between DELETE, TRUNCATE, and DROP?</h3> <p><b>DELETE</b> is a DML command that removes specific rows (can be rolled back). <b>TRUNCATE</b> is a DDL command that removes all rows (cannot be rolled back easily). <b>DROP</b> removes the entire table structure and data from the database.</p> </div>
+
+    <div class="question-block"> <h3>8. What is an Index and what are its types?</h3> <p>An Index is a performance tuning technique that speeds up data retrieval. Common types include <b>Clustered Index</b> (reorders the way data is physically stored) and <b>Non-Clustered Index</b> (creates a separate structure to point to the data).</p> </div>
+
+    <div class="question-block"> <h3>9. What is a View in DBMS?</h3> <p>A View is a virtual table based on the result-set of an SQL statement. It doesn't store data physically but provides a way to simplify complex queries or restrict access to specific columns for security.</p> </div>
+
+    <div class="question-block"> <h3>10. What is the difference between a Stored Procedure and a Function?</h3> <p>A <b>Function</b> must return a value and can only use input parameters. A <b>Stored Procedure</b> may or may not return a value, can have both input/output parameters, and allows DML statements like INSERT or UPDATE.</p> </div>
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
