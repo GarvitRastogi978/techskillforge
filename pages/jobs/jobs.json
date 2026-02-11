@@ -1,47 +1,47 @@
 [
   {
-    "role": "Python Developer",
-    "company": "Infosys",
-    "location": "Remote",
+    "role": "Apprentice",
+    "company": "Fujitsu",
+    "location": "Pune, Chennai, Noida, Bangalore, Hyderabad",
     "experience": "0–1 Years",
-    "type": "Fresher",
-    "skills": ["Python", "OOPs", "SQL", "Git"],
-    "applyLink": "https://company.com/apply"
+    "type": "Fresher FY 2026",
+    "skills": ["Good Communication skills, Learning Aptitude"],
+    "applyLink": "https://www.jobs.global.fujitsu.com/job/Apprentice-Hiring-FY-2026/5610-en_US?source=IND%20&src=JB-10800"
   },
   {
-    "role": "Data Analyst",
-    "company": "Accenture",
-    "location": "Bangalore",
-    "experience": "2–4 Years",
-    "type": "Experienced",
-    "skills": ["SQL", "Excel", "Power BI", "Python"],
-    "applyLink": "https://company.com/jobs"
+    "role": "Product Analyst",
+    "company": "Zorvyn",
+    "location": "Worldwide",
+    "experience": "0-2 Years",
+    "type": "Full Time",
+    "skills": ["SQL", "Excel", "Power BI", "Python, Business Understanding"],
+    "applyLink": "https://career.zorvyn.io/careers/BS0T5B"
   },
   {
-    "role": "Frontend Intern",
-    "company": "Startup",
-    "location": "Hybrid",
-    "experience": "Internship",
+    "role": "Junior Data Analyst",
+    "company": "Stier Solutions Inc",
+    "location": "Hyderabad",
+    "experience": "0-2 Years",
+    "type": "Full-time | On-site / Hybrid",
+    "skills": ["SQL, Excel, BI Tool, Analytical Thinking"],
+    "applyLink": "https://www.linkedin.com/jobs/view/4369520592/"
+  },
+  {
+    "role": "Data Analyst Intern",
+    "company": "Wake Up Whistle",
+    "location": "Virtual / Remote",
+    "experience": "Fresher",
     "type": "Internship",
-    "skills": ["HTML", "CSS", "JavaScript"],
-    "applyLink": "https://startup.com/apply"
+    "skills": ["SQL, Excel, BI Tool, Analytical Thinking"],
+    "applyLink": "https://docs.google.com/forms/d/1pk9ZN-620VbRliDY7YeVKs4JA149rmVnM96ki354Z2I/viewform?edit_requested=true"
   },
   {
-    "role": "DevOps Engineer",
-    "company": "TCS",
-    "location": "Chennai",
-    "experience": "3–5 Years",
-    "type": "Experienced",
-    "skills": ["AWS", "Docker", "Kubernetes", "CI/CD"],
-    "applyLink": "https://tcs.com/careers"
-  },
-  {
-    "role": "Marketing Intern",
-    "company": "Digital Solutions",
-    "location": "Remote",
-    "experience": "Internship",
-    "type": "Internship",
-    "skills": ["Social Media", "Content Creation", "SEO"],
-    "applyLink": "https://digitalsolutions.com/internships"
+    "role": "Python Developer",
+    "company": "Jobsmill",
+    "location": "Hyderabad",
+    "experience": "0-3 Years",
+    "type": "Full Time, Permanent",
+    "skills": ["Python, Software Engineering"],
+    "applyLink": "https://www.naukri.com/job-listings-python-developer-jobsmill-business-solutions-private-limited-hyderabad-0-to-3-years-140825022023?src=drecomm_recommended&sid=17707041809098632&xp=1&px=1"
   }
 ]

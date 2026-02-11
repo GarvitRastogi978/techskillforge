@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Lists Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top Python Lists interview questions and answers for job preparation. Read common Python Lists questions asked in interviews." />
+  <meta name="keywords" content="Python Lists Interview Questions, Job Interview Python Lists Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>10 Most-Asked Python Lists Interview Questions</h1>
+    <p>Prepare effectively for your next Python Lists interview with these commonly asked questions and model answers.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+    <div class="question-block"> <h3>1. What is the difference between a List and a Tuple?</h3> <p>The primary difference is <b>mutability</b>. Lists are mutable (you can change, add, or remove elements), whereas tuples are immutable. Because of this, tuples are generally faster and can be used as keys in dictionaries, while lists cannot.</p> </div>
+    <div class="question-block"> <h3>2. How are Python lists stored in memory?</h3> <p>Python lists are <b>dynamic arrays</b>. They store references to objects rather than the objects themselves. When a list grows beyond its allocated capacity, Python allocates a larger chunk of memory and copies the references over.</p> </div>
+    <div class="question-block"> <h3>3. What is List Comprehension and how do you use it?</h3> <p>List comprehension is a concise way to create lists. It consists of brackets containing an expression followed by a <code>for</code> clause. For example: <code>[x**2 for x in range(5)]</code> creates a list of squares.</p> </div>
+    <div class="question-block"> <h3>4. What is the time complexity of common List operations?</h3> <p>In Big O notation: Accessing an element is <b>O(1)</b>, appending an element is <b>O(1)</b> (amortized), but inserting or deleting at the beginning/middle is <b>O(n)</b> because subsequent elements must be shifted.</p> </div>
+    <div class="question-block"> <h3>5. What is the difference between append() and extend()?</h3> <p><code>append()</code> adds a single element to the end of the list. <code>extend()</code> iterates over an iterable (like another list) and adds each element individually to the end.</p> </div>
+    <div class="question-block"> <h3>6. How do you remove duplicates from a list?</h3> <p>The most common way is to convert the list to a <b>set</b> and back to a list: <code>list(set(my_list))</code>. Note that this does not preserve the original order of elements.</p> </div>
+    <div class="question-block"> <h3>7. What is List Slicing?</h3> <p>Slicing allows you to access a range of elements using the syntax <code>list[start:stop:step]</code>. For example, <code>my_list[::-1]</code> is a common idiom used to reverse a list.</p> </div>
+    <div class="question-block"> <h3>8. What is the difference between shallow copy and deep copy?</h3> <p>A <b>shallow copy</b> creates a new list object but copies references to the original nested objects. A <b>deep copy</b> (using the <code>copy</code> module) recursively creates copies of all objects found in the original, making it truly independent.</p> </div>
+    <div class="question-block"> <h3>9. How does the sort() method differ from the sorted() function?</h3> <p><code>list.sort()</code> sorts the list <b>in-place</b> and returns <code>None</code>. The <code>sorted(list)</code> function returns a <b>new sorted list</b>, leaving the original list unchanged.</p> </div>
+    <div class="question-block"> <h3>10. Can a Python list contain different data types?</h3> <p>Yes, Python lists are <b>heterogeneous</b>. Since they store references to objects, a single list can contain a mix of integers, strings, objects, and even other lists.</p> </div>
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

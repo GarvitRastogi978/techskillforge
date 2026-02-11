@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analyst Interview Questions | TechSkillForge</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Top Data Analyst interview questions and answers for job preparation. Read common Data Analyst questions asked in interviews." />
+  <meta name="keywords" content="Data Analyst Interview Questions, Job Interview Data Analyst Questions" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* QUESTIONS – READING PAGE */
+    .content-container{
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .question-block{
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .question-block h3{
+      margin-bottom: 0.6rem;
+    }
+
+    .question-block p{
+      margin-bottom: 0.4rem;
+    }
+
+    .answer{
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TechSkillForge</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../tutorials.html">Tutorials</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../questions.html">Questions</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>10 Most-Asked Data Analyst Interview Questions</h1>
+    <p>Prepare effectively for your next Data Analyst interview with these commonly asked questions and model answers.</p>
+  </section>
+
+<hr>
+
+  <!-- Content -->
+  <section class="content-container">
+
+    <div class="question-block"><h3>1. What is the difference between Data Profiling and Data Mining?</h3><p>Data profiling focuses on analyzing individual datasets to understand their structure, quality, and content. Data mining, however, involves searching for hidden patterns, trends, and anomalies across large datasets to predict future behavior.</p></div>
+    <div class="question-block"><h3>2. How do you handle missing or corrupted data in a dataset?</h3><p>Common strategies include <b>deletion</b> (removing rows/columns), <b>imputation</b> (replacing missing values with mean, median, or mode), or using <b>assignment</b> (flagging them as 'Unknown'). The choice depends on the volume of missing data and its impact on the analysis.</p></div>
+    <div class="question-block"><h3>3. Explain the difference between JOIN and UNION in SQL.</h3><p><code>JOIN</code> is used to combine columns from two or more tables based on a related column between them (horizontal combination). <code>UNION</code> is used to combine the result-set of two or more SELECT statements (vertical combination), requiring the same number of columns and data types.</p></div>
+    <div class="question-block"><h3>4. What is the purpose of a Pivot Table?</h3><p>A Pivot Table is a data summarization tool used to automatically sort, count, total, or average data stored in one table. it allows you to transform rows into columns and vice versa to see different perspectives of the data.</p></div>
+    <div class="question-block"><h3>5. Define 'Overfitting' and how to avoid it.</h3><p>Overfitting occurs when a model learns the noise and details in the training data too well, negatively impacting its performance on new data. It can be avoided by using more training data, <b>cross-validation</b>, or simplifying the model by reducing features.</p></div>
+    <div class="question-block"><h3>6. What are the common problems data analysts face during analysis?</h3><p>Typical challenges include handling <b>duplicate records</b>, poor data quality (dirty data), dealing with <b>outliers</b> that skew results, and integrating data from multiple disparate sources.</p></div>
+    <div class="question-block"><h3>7. What is an Outlier, and how do you treat it?</h3><p>An outlier is a data point that differs significantly from other observations. You can treat them by <b>transforming</b> the data (e.g., log transformation), <b>capping/flooring</b> (Winsorization), or removing them if they are confirmed as measurement errors.</p></div>
+    <div class="question-block"><h3>8. Explain the difference between Descriptive and Predictive Analysis.</h3><p>Descriptive analysis looks at past data to describe <b>what happened</b> (e.g., monthly sales reports). Predictive analysis uses statistical models and forecasting techniques to understand <b>what might happen</b> in the future.</p></div>
+    <div class="question-block"><h3>9. What is the significance of the P-value?</h3><p>In statistics, the p-value helps determine the significance of your results. A p-value (usually 0.05) indicates strong evidence against the null hypothesis, suggesting that your findings are likely not due to random chance.</p></div>
+    <div class="question-block"><h3>10. Describe the data cleaning process you follow.</h3><p>The process usually involves: 1. Removing duplicates, 2. Handling missing values, 3. Standardizing data formats (e.g., date formats), 4. Validating data integrity, and 5. Filtering out irrelevant noise or outliers.</p></div>
+
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TechSkillForge. Prepare confidently for interviews.</p>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
